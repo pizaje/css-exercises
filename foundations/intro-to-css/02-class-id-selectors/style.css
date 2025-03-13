@@ -1,0 +1,23 @@
+p {
+  background-color: #FF8888;
+  font: "verdana", "DejaVu Sans";
+  font-family: sans-serif;
+}
+
+.just-use-p {
+  /* just use p */
+}
+#two {
+  color: #0000FF;
+  font-size: 36px;
+}
+
+#three {
+  font-size: 24px;
+}
+
+#four {
+  background-color: #88FF88;
+  font-size: 24px;
+  font-weight: 700;
+}
