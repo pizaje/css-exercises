@@ -1,0 +1,14 @@
+button {
+  font-size: 28px;
+  font: "Helvetica", "Times New Roman";
+  font-family: sans-serif;
+}
+
+.ka { /* could be an ID */
+  background-color: black; /* hsl doesn't work for this one! */
+  color: #FFFFFF;
+}
+
+.chow {
+  background-color: rgb(220, 220, 0); /* colors are case-sensitive */
+}
