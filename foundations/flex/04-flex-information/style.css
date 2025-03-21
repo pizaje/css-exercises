@@ -1,3 +1,7 @@
+/* What did you do wrong?: Watch out for redundancy! It is less of a problem in this
+situation however, as with a more envisioned project, the default styling should be much
+more obvious and changed on a specific basis. */
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +14,22 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center; /* Could've been done in body */
+  margin-bottom: 32px; /* Picked the right code! */
+}
+
+.picture {
+  width: 200px; /* max-width, actually */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Could've been done in body */
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
 }
 
 /* do not edit this footer */

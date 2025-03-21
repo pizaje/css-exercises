@@ -1,6 +1,20 @@
+/* What did you do wrong?: You got caught up in debugging, the div selector was used for
+testing if .header and div behaved differently, since you knew how header behaved. It's
+important to go back to your original idea after confirming a bug isn't present, else
+your code will be harder to read. */
+
+div {
+  /* could've done this on header */
+  display: flex;
+  align-items: center;
+  /* padding here does the same as margin in ul, I like my solution though */
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  width: auto;
+  justify-content: space-between;
 }
 
 .logo {
@@ -12,6 +26,10 @@
 }
 
 ul {
+  display: flex;
+  gap: 15px;
+  margin: 10px; /* unnecessary */
+  padding: 0px;
   /* this removes the dots on the list items*/
   list-style-type: none;
 }
