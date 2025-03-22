@@ -1,3 +1,10 @@
+/* What did you do wrong?: Inefficiency. The correct answer is far too removed from your
+code to even be checkable, so the simple issue is inexperience. Instead of making a new
+container, you could've used the same container for the hader to wrap the whole thing.
+Learning coding logic is already difficult enough as-is, and the difference between a good
+coder and a great coder is this and the proper solution, but that comes with time, so in
+reality nothing here is partcularily wrong and to state what is would be redundant. */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,20 +27,47 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /*  */
+  display: flex;
+  border: 16px solid white; /* used padding */
+  /* gap could've been here instead */
+  /*  */
 }
 
 .icon {
-  color: royalblue;
+  color: royalblue;  min-width: 42px;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  /*  */
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 42px; /* flex-shrink */
+  margin-right: 16px;
+  /*  */
 }
+/*  */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titlecontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 20px;
+}
+/*  */
 
 .close-button {
   background: #eee;

@@ -1,3 +1,11 @@
+/* What did you do wrong?: Again, failure to compress. In a more professional setting, it
+may be useful to install a plugin to or re-check your code to find these issues. */
+/*  */
+*, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+/*  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -5,8 +13,17 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*  */
+  display: flex;
+  justify-content: space-between; /* unnecessary */
+  flex-direction: column;
+  /*  */
 }
-
+/*  */
+a {
+  color: #444;
+}
+/*  */
 img {
   width: 600px;
 }
@@ -16,6 +33,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*  */
+  padding: 8px;
+  /*  */
 }
 
 input {
@@ -24,3 +44,42 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+/*  */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  /* flex: 1? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer { /* header and footer could've been the same */
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+/* somehow you don't need either of these???? */
+.left-links {
+  display: flex;
+  justify-content: start;
+  padding: 16px;
+  margin: 0;
+  border: 0;
+  gap: 16px;
+}
+
+.right-links {
+  display: flex;
+  justify-content: end;
+  padding: 16px;
+  margin: 0;
+  border: 0;
+  gap: 16px;
+}
+/*  */
